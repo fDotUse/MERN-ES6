@@ -15,7 +15,7 @@ Global tools needed to run this app:
 ## Developer mode HRM + eval build  
 * `npm run dev`
 
-## Build for deployment && Deploy
+## Build for deployment
 * `npm run build`
 
 ## Test production locally
