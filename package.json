@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf ./dist/bundle.js",
-    "build": "webpack",
-    "serve": "node _server/app.js",
-    "start": "npm run clean && npm run build && npm run serve",
-    "dev-server": "nodemon _server/app.js",
-    "dev-client": "webpack --watch"
+    "build": "npm run clean && cross-env NODE_ENV=production webpack -p --config webpack.production.config.js ",
+    "start": "node _server/app.js",
+    "prod-start": "cross-env NODE_ENV=production npm start",
+    "prod": "npm run clean && npm run build && npm run prod-start",
+    "dev": "nodemon _server/app.js"
   },
   "author": "Sergio Martin",
   "license": "MIT",
@@ -23,6 +23,7 @@
     "body-parser": "^1.16.0",
     "bootstrap": "^3.3.7",
     "cookie-parser": "^1.4.3",
+    "cross-env": "^3.1.4",
     "css-loader": "^0.26.1",
     "dotenv": "^4.0.0",
     "eslint": "^3.6.1",
@@ -53,6 +54,8 @@
     "underscore": "^1.8.3",
     "url": "^0.11.0",
     "webpack": "^2.1.0-beta.25",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1",
     "yargs": "^6.6.0"
   }
 }

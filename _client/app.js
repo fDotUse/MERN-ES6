@@ -8,6 +8,7 @@ import { Router, Route, browserHistory } from 'react-router'
 
 // Components
 import Landing from './components/Landing'
+import Main from './components/Main'
 
 const App = React.createClass({
   render () {
@@ -15,6 +16,7 @@ const App = React.createClass({
       <div className='app'>
         <Router history={browserHistory}>
           <Route path='/' component={Landing} />
+          <Route path='/main' component={Main} />
         </Router>
       </div>
     )

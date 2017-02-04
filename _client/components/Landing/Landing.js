@@ -9,7 +9,7 @@ class Landing extends React.Component {
     return (
       <div id='Landing'>
         <h1>
-          <Link to='/main'>Boiler MERN-ES6</Link>
+          <Link to='/main'>Boiler MERN-ES6 ?</Link>
         </h1>
       </div>
     )

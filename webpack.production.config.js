@@ -1,16 +1,12 @@
 const path = require('path')
 const webpack = require('webpack')
 module.exports = {
-  devServer: {
-    publicPath: '/dist/'
-  },
   context: __dirname,
   entry: './_client/app.js',
-  devtool: 'eval',
+  devtool: 'eval-source-map',
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js',
-    publicPath: '/dist/'
+    filename: 'bundle.js'
   },
   resolve: {
     extensions: ['.js', '.json']
@@ -56,7 +52,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compressor: {
+    //     warnings: false
+    //   }
+    // })
   ]
 }
