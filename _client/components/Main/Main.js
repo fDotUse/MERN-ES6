@@ -6,8 +6,11 @@ import './Main'
 class Main extends React.Component {
   render () {
     return (
-      <div id='Main'>
-        <h1>Main Component</h1>
+      <div id='Main' className='row center-xs'>
+        <div>
+          <h1>You got it! :)</h1>
+          <h2>/Main</h2>
+        </div>
       </div>
     )
   }

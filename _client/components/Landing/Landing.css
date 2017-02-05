@@ -1,5 +1,50 @@
 /*USE #Landing*/
 
-#Landing h1>a {
-  color: blue;
+#Landing {
+  height: 100vh;
+}
+
+#Landing .logos-container {
+  height: 75%;
+  color: #ffffff;
+  background-color:#222222;
+  margin-bottom: 32px;
+}
+
+#Landing .info-container {
+  color: #000000;
+}
+
+#Landing .logo-img-container {
+  max-width: 200px;
+  margin-bottom: 16px;
+}
+
+#Landing .logo-img {
+  width: 100%;
+}
+
+#Landing .plus-img-container {
+  max-width: 40px;
+}
+
+#Landing .plus-img {
+  width: 100%;
+}
+
+#Landing .powered-img-container {
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#Landing .powered-img {
+  width: 50px;
+  height: 50px;
+}
+
+#Landing a {
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: 600;
 }

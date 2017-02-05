@@ -1,5 +1,7 @@
 // Css dependencies
 import 'normalize.css'
+import 'flexboxgrid'
+import './app.css'
 
 // React dependencies
 import React from 'react'
@@ -13,7 +15,7 @@ import Main from './components/Main'
 const App = React.createClass({
   render () {
     return (
-      <div className='app'>
+      <div className='app' id='#app'>
         <Router history={browserHistory}>
           <Route path='/' component={Landing} />
           <Route path='/main' component={Main} />
